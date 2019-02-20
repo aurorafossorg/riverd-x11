@@ -23,6 +23,16 @@
 			]
 		},
 		{
+			"name": "types-import",
+			"targetType": "sourceLibrary",
+			"excludedSourceFiles": [
+				"source/riverd/x11/dynfun.d",
+				"source/riverd/x11/dynload.d",
+				"source/riverd/x11/package.d",
+				"source/riverd/x11/statfun.d"
+			]
+		},
+		{
 			"name": "dynamic",
 			"dependencies": {
 				"riverd-core": "~>1.0.1"
