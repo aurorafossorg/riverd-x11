@@ -3,3 +3,8 @@ v0.1.0
 
 v0.1.1
 - Add types-import configuration
+
+v0.1.2
+- Make types-import as default configuration
+- Add dynamic alias types
+- Fix typos
