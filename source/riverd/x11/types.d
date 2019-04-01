@@ -1955,13 +1955,6 @@ struct XrmValue
 
 alias XrmValue* XrmValuePtr;
 
-extern (C) extern XrmQuark XrmUniqueQuark();
-
-pragma(inline, true) XContext XUniqueContext()
-{
-	return cast(XContext) XrmUniqueQuark();
-}
-
 alias XContext = int;
 
 extern (C) @nogc nothrow

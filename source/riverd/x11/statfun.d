@@ -2645,4 +2645,6 @@ extern(C) @nogc nothrow {
 	void XrmDestroyDatabase(
 		XrmDatabase		/* database */
 	);
+
+	XrmQuark XrmUniqueQuark();
 }
