@@ -35,6 +35,8 @@ directly send an email to: contact (at) aurorafoss.org .
 
 module riverd.x11;
 
+public import riverd.x11.types;
+
 version(RiverD_X11_Static) {
 	public import riverd.x11.statfun;
 } else {
