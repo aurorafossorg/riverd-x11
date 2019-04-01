@@ -1978,7 +1978,7 @@ extern (C) @nogc nothrow
 	version (XlibWidePrototypes) alias da_XInsertModifiermapEntry = XModifierKeymap* function(XModifierKeymap*  /* modmap */ , uint /* keycode_entry */ , int /* modifier */);
 	else alias da_XInsertModifiermapEntry =XModifierKeymap* function(XModifierKeymap*  /* modmap */ , KeyCode /* keycode_entry */ , int /* modifier */);
 
-	alias da_XNewModifiermap = XModifierKeymap* function(int /* max_keys_per_mod */);\
+	alias da_XNewModifiermap = XModifierKeymap* function(int /* max_keys_per_mod */);
 	alias da_XCreateImage = XImage* function(Display*  /* display */ , Visual*  /* visual */ , uint /* depth */ ,int /* format */ , int /* offset */ , char*  /* data */ , uint /* width */ ,uint /* height */ , int /* bitmap_pad */ , int /* bytes_per_line */);
 	alias da_XInitImage = Status function(XImage*  /* image */);
 	alias da_XGetImage = XImage* function(Display*  /* display */ , Drawable /* d */ , int /* x */ ,int /* y */ , uint /* width */ , uint /* height */ , c_ulong /* plane_mask */ , int /* format */);
