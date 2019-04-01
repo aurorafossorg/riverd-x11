@@ -2647,4 +2647,6 @@ extern(C) @nogc nothrow {
 	);
 
 	XrmQuark XrmUniqueQuark();
+
+	pragma(inline, true) XContext XUniqueContext() { return cast(XContext)XrmUniqueQuark(); }
 }
