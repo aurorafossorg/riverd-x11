@@ -10,7 +10,18 @@
 	"targetPath": ".out/bin",
 	"importPaths": ["source"],
 	"sourcePaths": ["source"],
+	"platforms":["linux"],
 	"configurations": [
+		{
+			"name": "types-import",
+			"targetType": "sourceLibrary",
+			"excludedSourceFiles": [
+				"source/riverd/x11/dynfun.d",
+				"source/riverd/x11/dynload.d",
+				"source/riverd/x11/package.d",
+				"source/riverd/x11/statfun.d"
+			]
+		},
 		{
 			"name": "static",
 			"versions": ["RiverD_X11_Static"],
@@ -20,16 +31,6 @@
 			"excludedSourceFiles": [
 				"source/riverd/x11/dynfun.d",
 				"source/riverd/x11/dynload.d"
-			]
-		},
-		{
-			"name": "types-import",
-			"targetType": "sourceLibrary",
-			"excludedSourceFiles": [
-				"source/riverd/x11/dynfun.d",
-				"source/riverd/x11/dynload.d",
-				"source/riverd/x11/package.d",
-				"source/riverd/x11/statfun.d"
 			]
 		},
 		{
