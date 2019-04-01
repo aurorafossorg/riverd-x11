@@ -1,2 +1,5 @@
 v0.1.0
 - First snapshot (no dynamic load)
+
+v0.1.1
+- Add types-import configuration
